@@ -37,7 +37,7 @@ function handleGeoError(){
 }
 
 function askForCoords() {
-    navigator.geolocation.getCurrentPosition(handleGeoSuccess, handleGeoSuccess);
+    navigator.geolocation.getCurrentPosition(handleGeoSuccess, handleGeoError);
 }
 
 // 로컬 스토리지에 정보가 없으면 요청
